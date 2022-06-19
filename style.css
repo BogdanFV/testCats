@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Exo2.0';
+    src: url(/fonts/Exo2.0-Thin.otf);
+    font-style: normal;
+    font-display: swap;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/Pattern.png);
+
+    
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Trebuchet MS';
+}
+.cat-block-border {
+    position: relative;
+    clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100% , 0 40px);
+    border-radius: 12px;
+    width: 320px;
+    height: 480px;
+    background-color: #1698D9 ;
+
+    z-index: 5;
+}
+.cat-block{
+    clip-path:inherit;
+    border-radius: 12px;
+    background-color: #F2F2F2;
+    margin: 4px;
+    width: 312px;
+    height: 472px;
+}
+.cat-block-text-zone{
+    position: absolute;
+    top: 21px;
+    left: 51px;
+}
+.cat-block-text-below{
+    position: absolute;
+    bottom: -5px;
+    color: white;
+    z-index: 10;
+    background-color: #1698D9;
+}
+.cat-block-header-1{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #666666;
+    /* margin-top: calc(50% - 19px/2 - 224px); */
+}
+.cat-block-header-2{
+    margin-left: -3px;
+    font-size: 48px;
+    line-height: 56px;
+}
+.cat-block-header-3{
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+}
+.cat-block-text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+
+
+    color: #666666;
+}
+.cat__image{
+    position: absolute;
+    background: url(/images/cat.png) no-repeat;
+    background-position: top 208px left -24px;
+    border-bottom-left-radius: 12px;
+
+    width: 312px;
+    height: 472px;
+
+}
+.mass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    color: #FFFFFF;
+
+
+    z-index: 7;
+    background-color: #1698D9;
+}
+.mass-number{
+    margin: 20px 0 5px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+}
+.mass-unit{
+    font-size: 21px;
+}
+header{
+    position: absolute;
+    
+    top: 36px;
+
+    font-family: 'Exo2.0';
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 44px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 1px #000000;
+}
